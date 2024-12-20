@@ -1,0 +1,12 @@
+.btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+.profile .btn {
+    width: 10%;
+   
+}

@@ -1,0 +1,206 @@
+.navigation{
+    color: var(--text-color);
+    height: 65px;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.navigation-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.menu-content-container{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    justify-content: center;
+}
+
+.menu-page {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;   
+}
+
+.menu-page li{
+    position: relative;
+    padding: 0;
+}
+
+.menu-page  a{
+    text-decoration: none;
+      display: flex;
+      padding: 0 20px 0 20px;
+      font-size: 20px;
+      color: var(--text-color);
+   }
+
+.menu-page  a:hover{
+    color: var(--text-link);
+}
+
+.menu-signin{
+
+     margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;   
+}
+
+.menu-signin a {
+    text-decoration: none;
+    display: flex;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.menu-signin  a:hover{
+    color: var(--text-link);
+}
+.menu-user{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;    
+}
+
+.menu-user li{
+    position: relative;
+    padding: 0;
+}
+.menu-user li a{
+    text-decoration: none;
+    display: flex;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+    color: var(--text-color);
+    position: relative;
+}
+
+.ion-ios-menu{
+    font-size: 36px;
+    width: 65px;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+.active-link-blog {
+    color: var(--text-link) !important;
+   
+  }
+
+
+.responsive-active{
+    display:none ;
+}
+
+
+@media (max-width: 900px) {
+    .menu-content-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        width:220px;
+        height: 400px;
+        background: white;
+        position: absolute;
+        top:65px;
+        transition: 300ms ease left;
+        left: -300px;   
+        padding: 0;
+        box-shadow: 0 0.5rem 1rem rgba(145, 144, 144, 0.993), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+        border-radius: 0.5rem;
+             
+    }
+    .menu-content-container-active{
+        left:0px ;    
+    }
+    .menu-page{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       padding: 0;  
+    }
+    .menu-page li{
+        width: 100%;
+        height: 65px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-page a {
+        width: 100%;  
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 40px;
+    } 
+    .menu-signin{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+       width: 100%;
+       padding: 0; 
+    }
+
+   .menu-signin li{
+        width: 100%;
+        height: 65px;
+        display: flex;
+        position: relative;
+        justify-content: start;
+        align-items: center;
+        left: 1rem;
+    }
+  
+    .menu-user{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0;
+        list-style-type: none; 
+        padding: 0;
+        width: 100%;  
+        padding-bottom: 30px;
+        padding-right: 30px;
+        border-bottom: 1px solid silver;
+    }
+    
+    .menu-user li a{
+        text-decoration: none;   
+        font-size: 20px;
+        color: var(--text-color);  
+    }
+    .responsive-active{
+        display:flex ;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .ion-ios-menu{
+            display: flex;
+    }   
+}

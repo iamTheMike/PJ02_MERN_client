@@ -1,0 +1,37 @@
+
+
+.blogs-control{
+    width: 100%;
+    display:flex;
+    padding-inline: 10rem;
+    padding-block: 3rem;;
+    font-size: 1rem;
+    color: #495057;
+    background-color: var(--background-color);
+    background-clip: padding-box;
+    flex-direction: column;
+}
+.blogs-box{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    
+}
+.blogs{
+    background-color: white;
+    padding-inline: 2rem;
+    padding-top: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(145, 144, 144, 0.993), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+    border-radius: 1.5rem;
+    
+}
+.blogs p{
+    width: 100%!important;
+    word-wrap: break-word !important; 
+    overflow-wrap: break-word !important; 
+}
+
+.blogs-title{
+    color: black;
+}

@@ -1,0 +1,143 @@
+
+@media (max-width: 1200px)   {
+    .profile-container{
+        padding-inline:1rem !important;
+    }
+    .content-left{
+        margin-left: 7rem !important;
+    }
+    .content-right{
+        margin-block: 1rem !important;
+        padding-inline: 3rem !important;
+    }
+}
+@media (max-width: 800px)   {
+    .profile-container{
+        padding-inline:1rem !important;
+    }
+    .content-left{
+        margin-left: 2rem !important;
+    }
+    .content-right{
+        margin-block: 1rem !important;
+        padding-inline: 2rem !important;
+    }
+}
+@media (max-width: 400px)   {
+    .profile-container{
+        padding-inline:0rem !important;
+    }
+    .content-left{
+        margin-left: 0rem !important;
+    }
+    .content-right{
+        margin-block: 0rem !important;
+        padding-inline: 0 !important;
+    }
+}
+
+
+.profile-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-inline:5rem;
+    padding-top: 3rem;
+    
+
+}
+.content-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 5rem;
+}
+.image-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;   
+    height: 100% !important;
+    
+}
+.image-user{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    
+}
+.image-box h4{
+    padding-bottom: 1rem;
+}
+.image-box .image-user img{
+   padding: 0;
+   margin: 0 !important;
+   width: 20rem; 
+   height: 20rem;
+   border-radius: 50%;
+   margin-left: 10px 
+}
+.image-user .input-camera{
+    display: none
+}
+.image-user .uploadbtn{
+    cursor: pointer;
+}
+.image-box label {
+    position: absolute;
+    top:85%;
+ }
+.image-box label i{
+   font-size: 2rem ;
+   color: black; 
+}
+.bio-box{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-inline: 5rem;
+    height: 10rem;
+    margin-bottom: 9rem;
+
+  
+}
+.bio-box textarea{
+   width: 100%;
+   height: 100%;
+}
+
+
+.content-right{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10rem; 
+    justify-content: center;
+    margin-block: 2rem;
+}
+
+.content-right input{
+    width: 70%;
+}
+.address-box{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: 10rem;
+    margin-bottom: 2rem;
+}
+
+.address-box>textarea{
+    width: 70%;
+    height: 10rem;
+}
+
+.content-right>button{
+    width: 20%;
+    margin-left: 0%;
+} 
+

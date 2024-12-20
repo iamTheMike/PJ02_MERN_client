@@ -1,0 +1,110 @@
+@import './Blog.css';
+@import './Blogs.css';
+@import './FormBlog.css';
+@import './GoogleCallBack.css';
+@import './_Navbar.css';
+@import './_PopUpLogin.css';
+@import './_NavBlogDropdown.css';
+@import './_NavUserDropdown.css';
+@import './home.css';
+@import './_No_UserForm_.css';
+@import 'react-datepicker/dist/react-datepicker.css';
+@import './profile.css';
+
+
+@media  (max-width: 2300px) {
+  html{
+    font-size: 20px;
+  }  
+  content{
+    padding-inline: 0rem !important; 
+  }
+}
+@media  (max-width: 2000px) {
+  html{
+    font-size: 18px;
+  }  
+  content{
+    padding-inline: 0rem !important; 
+  }
+}
+@media  (max-width: 1500px) {
+  html{
+    font-size: 16px;
+  }  
+  content{
+    padding-inline: 0rem !important; 
+  }
+}
+
+@media  (max-width: 1200px) {
+html{
+  font-size: 14px;
+}  
+content{
+  padding-inline: 0rem !important; 
+}
+}
+
+@media  (max-width: 1050px) {
+  html{
+    font-size: 10px;
+  }  
+  content{
+    padding-inline: 0rem !important; 
+  }
+}
+@media  (max-width: 1050px) {
+    html{
+      font-size: 10px;
+    }  
+    content{
+      padding-inline: 0rem !important; 
+    }
+}
+@media  (max-width: 600px) {
+      html{
+        font-size: 6px;
+      }  
+      content{
+        padding-inline: 0rem !important; 
+      }
+}  
+
+  html body{
+    font-family: -apppl-system,ststem-ui,BlinkMacsystemFont,'Segoe UI',Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-weight: 500;
+    margin:0;
+    background-color: white;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+   
+   
+  }
+  main{
+    background-color: transparent;
+    padding-block: 3rem;
+    
+  }
+  content{
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    margin-inline:50px ;
+  }
+
+
+
+
+
+  :root{
+    --text-color:#444;
+    --text-link:dodgerblue ;
+    --background-color :#f8f9fa;
+    --border-color:#ccc;
+    
+  }
