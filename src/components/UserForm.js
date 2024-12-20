@@ -87,7 +87,7 @@ const UserForm = ({userData}) => {
         }
       
        
-        await axios.post(`${process.env.REACT_APP_API_USER}/creat-profile`,formData,{ 
+        await axios.post(`${process.env.REACT_APP_API_USER}/create-profile`,formData,{ 
           headers: {
               Authorization: `Bearer ${token}`
           }

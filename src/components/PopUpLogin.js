@@ -111,8 +111,10 @@ const PopUpLogin = ({isOpen,onClose}) => {
      
     const googleLoginUrl = async () => {
       try {
+        
         const response = await axios.get(`${process.env.REACT_APP_API_USER}/googlelogin`);
         setLoading(true);
+        console.log(response);
         const data = response.data.url;
         
         const newWindow = window.open(data, '_blank', 'width=800,height=600');
