@@ -12,7 +12,7 @@ const Blogs = () => {
     const token = sessionStorage.getItem('token')
     const [blogs,setBlogs] = useState([])
     const [user,setUser] = useState('')
-
+  
 
   const fetchData = async () => {
       setisLoading(true);

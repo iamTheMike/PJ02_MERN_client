@@ -3,9 +3,6 @@ import {Navbar} from "./components";
 import PageRender from "./Service/PageRender";
 import { Blog,EditBlog,GoogleCallback,Profile,NotFound, EditProfile } from "./Pages";
 import UserRequire from "./Service/UserRequire"
-import { useEffect, useState } from "react";
-import { getUser } from "./Service/FetchUser";
-
 
 const MyRoute = () => {
     console.log("AppJs");
