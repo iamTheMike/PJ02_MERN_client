@@ -9,23 +9,7 @@ import { getUser } from "./Service/FetchUser";
 
 const MyRoute = () => {
     console.log("AppJs");
-  const [user,setUser] = useState("");
-  const token = sessionStorage.getItem('token');
-  useEffect(() => {
-    const fetchUser = async () => {
-   if (token) {
-       try {
-           let userData = await getUser();  // เรียกฟังก์ชันที่ดึงข้อมูล
-           setUser(userData.user); 
-           
-           // อัปเดต state
-       } catch (error) {
-           console.log("Error fetching user data:", error);
-       }
-   }
-};
-fetchUser();
-}, [token]); 
+
 
   return (
     <Router>
@@ -35,7 +19,7 @@ fetchUser();
                 <Route path='/' element={<Navigate to="/home" />} />
                 <Route path="/blog/:slug" element={<Blog/>} />
                 <Route path="/profile/:username" element={<Profile/>} />
-                <Route element={<UserRequire user={user}/>}>
+                <Route element={<UserRequire />}>
                       <Route path="/edit-blog/:slug" element={<EditBlog />} />
                       <Route path="/edit-profile/:username" element={<EditProfile  />} />
                 </Route> 
