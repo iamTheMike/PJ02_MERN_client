@@ -7,7 +7,6 @@ import { getUser } from "../Service/FetchUser";
 import { Loading } from '../components'
 
 const Blogs = () => {
-    console.log("BlogsPage")
     const [isLoading,setisLoading] = useState(false)
     const token = sessionStorage.getItem('token')
     const [blogs,setBlogs] = useState([])

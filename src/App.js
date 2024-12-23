@@ -5,7 +5,7 @@ import { Blog,EditBlog,GoogleCallback,Profile,NotFound, EditProfile } from "./Pa
 import UserRequire from "./Service/UserRequire"
 
 const MyRoute = () => {
-    console.log("AppJs");
+  
 
 
   return (

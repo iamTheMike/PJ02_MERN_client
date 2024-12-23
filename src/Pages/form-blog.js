@@ -9,7 +9,6 @@ import { useNavigate } from "react-router-dom";
 
 
 const FormBlog =  () =>{
-    console.log("FormBlogPage")
     let token = sessionStorage.getItem('token')
     const [user,setUser] = useState('');
     const [title,setTitle] = useState("");

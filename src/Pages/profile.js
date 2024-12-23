@@ -7,7 +7,6 @@ import { getUser } from '../Service/FetchUser';
 
 
 const Profile =  () => {
-  console.log("ProfilePage")
   const [isLoading,setisLoading] = useState(false)
   const token = sessionStorage.getItem('token');
   const [user,setUser] = useState('');
@@ -58,8 +57,6 @@ const Profile =  () => {
      // eslint-disable-next-line react-hooks/exhaustive-deps
    },[username,token])  
 
-   console.log("userToken",user);  
-  console.log("userDataPara",userData);
   
   return (
     <main>

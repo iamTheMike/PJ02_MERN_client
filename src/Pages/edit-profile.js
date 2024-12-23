@@ -6,7 +6,6 @@ import { useParams } from 'react-router-dom';
 
 
 const EditProfile = () => {
-  console.log("EditProfilePage")
   const [isLoading,setisLoading] = useState(false)
   const {username} = useParams(); 
   const token = sessionStorage.getItem('token');

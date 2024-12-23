@@ -8,7 +8,6 @@ import { getUser } from "../Service/FetchUser";
 import { Loading } from "../components";
 
 const EditBlog= () => {
-    console.log("EditBlogPage")
     const [isLoading,setisLoading] = useState(false)
    const token = sessionStorage.getItem('token')
    const [user,setUser] = useState('');

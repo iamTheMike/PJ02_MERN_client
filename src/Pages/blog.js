@@ -7,7 +7,6 @@ import swal from 'sweetalert2'
 import { Loading } from '../components'
 
 const Blog = () => {
-  console.log("BlogPage")
   const [isLoading,setisLoading] = useState(false)
   const token = sessionStorage.getItem('token')
   const {slug}= useParams();
