@@ -21,7 +21,7 @@ const Profile =  () => {
             setUserData(response.data)
          })
          .catch(error=>{
-          if(error.response.data.message==="User not found"){
+          if(error.response.request.status===404){
                swal.fire({
                     title: "Error",
                     text: error.response.data.message,
