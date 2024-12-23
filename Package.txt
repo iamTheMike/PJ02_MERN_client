@@ -1,0 +1,15 @@
+client
+    -react
+        useState
+        useEffect
+        useParams : pull parameter url
+    -react-router-dom 
+       { BrowserRouter as Router, Routes, Route }
+       {Link,useLocation,useNaviagte}  
+    -axios   :connect HTTP API
+    -sweetalert2 : Decorate alert box
+    -react-quill : blog form
+    -html-react-parser : use with reqact-quill 
+    -@quasar/extras : Decorate css
+    -Boxicon : decorate css
+    -react-datepicker : create calender
