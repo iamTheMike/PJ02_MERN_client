@@ -119,11 +119,11 @@
     .menu-content-container{
         flex-direction: column-reverse;
         justify-content: center;
-        width:220px;
-        height: 400px;
+        width:200px;
+        height: 300px;
         background: white;
         position: absolute;
-        top:65px;
+        top:100px;
         transition: 300ms ease left;
         left: -300px;   
         padding: 0;
@@ -199,6 +199,103 @@
         display:flex ;
         font-weight: 700;
         font-size: 22px;
+    }
+    .ion-ios-menu{
+            display: flex;
+    }   
+}
+
+@media (max-width: 500px) {
+    .menu-content-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        width:100px;
+        height: 150px;
+        background: white;
+        position: absolute;
+        top:65px;
+        transition: 300ms ease left;
+        left: -300px;   
+        padding: 0;
+        box-shadow: 0 0.5rem 1rem rgba(145, 144, 144, 0.993), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+        border-radius: 0.5rem;
+             
+    }
+    .menu-content-container-active{
+        left:0px ;    
+    }
+    .menu-page{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       padding: 0;  
+    }
+
+    .menu-page li{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        position: relative;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .menu-page a{
+        width: 100% !important;  
+        font-size: 10px;
+        display: flex;
+        position: relative;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0 !important;
+    } 
+    .menu-signin{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+       width: 100%;
+       padding: 0; 
+    }
+
+   .menu-signin li{
+        width: 100%;
+        height: 65px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .menu-signin a {
+      
+        font-size: 10px;
+       
+    }
+    .menu-user{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0;
+        list-style-type: none;
+        padding: 0; 
+        padding-bottom: 5px;
+        width: 100%;  
+        border-bottom: 1px solid silver;
+    }
+    
+    .menu-user li a{
+        text-decoration: none;   
+        font-size: 20px;
+        color: var(--text-color);  
+    }
+    .responsive-active{
+        display:flex ;
+        font-weight: 700;
+        font-size: 10px;
     }
     .ion-ios-menu{
             display: flex;
