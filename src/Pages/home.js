@@ -10,7 +10,7 @@ const home = () => {
                 <div className='home-content-left'>
                     <h1>Jiraphat Pakdeputarak</h1>
                     <span >You can call me . . .<h1>MIKE</h1> </span>
-                    <h3>And I'm a <span className="text-span">Web Devoloper. </span></h3>
+                    <h3>And I'm a <span className="text-span">Junior Devoloper. </span></h3>
                     <p>
                         Although I’m new to the development field
                     <br/>
