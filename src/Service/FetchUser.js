@@ -7,9 +7,9 @@ export const getUser = async () => {
             const response = await axios.get(`${process.env.REACT_APP_API_USER}/getUser`, {
                 headers: {
                     Authorization: `Bearer ${token}`
-             }
+                }
             });
-           return response.data;
+            return response.data;
         } catch (error) {
             return null;
         }

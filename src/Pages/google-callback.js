@@ -21,7 +21,6 @@ const GoogleCallback = () => {
     .catch((err) => {
       console.log(err);
     });
-
   return (
     <main>
       <content>
@@ -30,7 +29,6 @@ const GoogleCallback = () => {
         </div>
       </content>
     </main>
-
   )
 }
 export default GoogleCallback 

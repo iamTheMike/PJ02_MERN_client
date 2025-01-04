@@ -6,7 +6,7 @@ import Home from './home'
 import GoogleCallback from './google-callback'
 import Profile from './profile'
 import NotFound from './notfound'
-import EditProfile  from './edit-profile'
+import EditProfile from './edit-profile'
 
 export {
     Blog,

@@ -6,76 +6,65 @@ import swal from 'sweetalert2';
 import { getUser } from '../Service/FetchUser';
 
 
-const Profile =  () => {
-  const [isLoading,setisLoading] = useState(false)
+const Profile = () => {
+  const [isLoading, setisLoading] = useState(false)
   const token = sessionStorage.getItem('token');
-  const [user,setUser] = useState('');
-  const {username} = useParams();  
-  const [userData,setUserData]= useState(null);
+  const [user, setUser] = useState('');
+  const { username } = useParams();
+  const [userData, setUserData] = useState(null);
   const navigate = useNavigate();
-  const fetchData = async() =>{
+  const fetchData = async () => {
     setisLoading(true);
-         await axios.get(`${process.env.REACT_APP_API_USER}/profile/${username}`)
-         .then(response => {
-            setUserData(response.data)
-         })
-         .catch(error=>{
-          if(error.response.request.status===404){
-               swal.fire({
-                    title: "Error",
-                    text: error.response.data.message,
-                    icon: "error",
-                  }).then(result=>{
-                      if(result.isConfirmed){
-                        return navigate('/')
-                      }
-                  })
-          }
-         })
-       }
+    await axios.get(`${process.env.REACT_APP_API_USER}/profile/${username}`)
+      .then(response => {
+        setUserData(response.data)
+      })
+      .catch(error => {
+        if (error.response.request.status === 404) {
+          swal.fire({
+            title: "Error",
+            text: error.response.data.message,
+            icon: "error",
+          }).then(result => {
+            if (result.isConfirmed) {
+              return navigate('/')
+            }
+          })
+        }
+      })
+  }
   const fetchUser = async () => {
     setisLoading(true);
-        if (token) {
-            try {
-                let userData = await getUser();  // เรียกฟังก์ชันที่ดึงข้อมูล
-                setUser(userData.user); 
-                
-                // อัปเดต state
-            } catch (error) {
-                
-                console.log("Error fetching user data:", error);
-            }
-        }
-     };
-     const fetching =async()=>{
-      await fetchUser(); 
-      await fetchData();    
-      setisLoading(false);
-     }  
-   useEffect(()=>{
+    if (token) {
+      try {
+        let userData = await getUser();  
+        setUser(userData.user);
+      } catch (error) {
+        console.log("Error fetching user data:", error);
+      }
+    }
+  };
+  const fetching = async () => {
+    await fetchUser();
+    await fetchData();
+    setisLoading(false);
+  }
+  useEffect(() => {
     fetching();
-     // eslint-disable-next-line react-hooks/exhaustive-deps
-   },[username,token])  
-
-  
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [username, token])
   return (
     <main>
-      {isLoading&& <Loading ></Loading>}
-        <content   className="profile">
+      {isLoading && <Loading ></Loading>}
+      <content className="profile">
         <NoUserForm userData={userData} />
-        {user.userName===username &&
+        {user.userName === username &&
           <div className='btn-box'>
             <Link className='btn btn-info btn-block btn-round' to={`/edit-profile/${username}`} >Edit</Link>
           </div>
-          }
-       
-        </content>
-       
-
-      
+        }
+      </content>
     </main>
-    
   )
 }
-
 export default Profile
