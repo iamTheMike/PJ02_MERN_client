@@ -30,7 +30,7 @@
 }
 @media  (max-width: 1500px) {
   html{
-    font-size: 16px;
+    font-size: 12px;
   }  
   content{
     padding-inline: 0rem !important; 
@@ -39,7 +39,7 @@
 
 @media  (max-width: 1200px) {
 html{
-  font-size: 14px;
+  font-size: 10px;
 }  
 content{
   padding-inline: 0rem !important; 
@@ -54,14 +54,7 @@ content{
     padding-inline: 0rem !important; 
   }
 }
-@media  (max-width: 1050px) {
-    html{
-      font-size: 10px;
-    }  
-    content{
-      padding-inline: 0rem !important; 
-    }
-}
+
 @media  (max-width: 600px) {
       html{
         font-size: 6px;

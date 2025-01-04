@@ -117,15 +117,8 @@ const PopUpLogin = ({isOpen,onClose}) => {
         console.log(response);
         const data = response.data.url;
         
-        const newWindow = window.open(data, '_blank', 'width=800,height=600');
+        window.location.href = data;
         
-        //watch dog run every 1sec
-        const interval = setInterval(() => {
-          if (newWindow.closed) {
-            setLoading(false);
-            clearInterval(interval);  
-          }
-        }, 1000);
 
       } catch (error) {
         console.warn (error);

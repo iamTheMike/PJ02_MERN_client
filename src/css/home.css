@@ -77,8 +77,12 @@
 @media  (max-width: 750px) {
 
     .home, .myskill,.about{
+        display: flex !important;
+        flex-direction: column !important;
         padding-block: 2rem !important;
-        padding:0 !important;
+        padding:2rem 4rem !important;
+        height:auto !important;
+
      
     }
     .home-content{
@@ -108,6 +112,7 @@
    
     
 }
+
 
 .home{
     position: relative;
