@@ -22,7 +22,7 @@ const EditProfile = () => {
     setisLoading(true)
     if (token) {
       try {
-        let userData = await getUser();  
+        let userData = await getUser();
         setUser(userData.user);
       } catch (error) {
         console.log("Error fetching user data:", error);
