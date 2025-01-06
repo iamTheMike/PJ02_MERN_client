@@ -119,49 +119,7 @@ const home = () => {
             </div>
           </div>
         </section>
-        <section className='personalskill'>
-          <div className='personalskill-content'>
-            <h1 className='headingskill1'>Professional skill</h1>
-            <div className='radial-bars'>
-              <div className='radial-bar-1'>
-                <div className='radial-bar'>
-                  <svg x="0" y="0" viewBox='0 0 200 200'>
-                    <circle className='progress-bar' cx="100" cy="100" r="80"></circle>
-                    <circle className='path path-1' cx="100" cy="100" r="80"></circle>
-                  </svg>
-                  <div className='percentage'>75%</div>
-                  <div className='text'>Creativity</div>
-                </div>
-                <div className='radial-bar'>
-                  <svg x="0" y="0" viewBox='0 0 200 200'>
-                    <circle className='progress-bar' cx="100" cy="100" r="80"></circle>
-                    <circle className='path path-2' cx="100" cy="100" r="80"></circle>
-                  </svg>
-                  <div className='percentage'>70%</div>
-                  <div className='text'>Communication</div>
-                </div>
-              </div>
-              <div className='radial-bar-2'>
-                <div className='radial-bar'>
-                  <svg x="0" y="0" viewBox='0 0 200 200'>
-                    <circle className='progress-bar' cx="100" cy="100" r="80"></circle>
-                    <circle className='path path-3' cx="100" cy="100" r="80"></circle>
-                  </svg>
-                  <div className='percentage'>80%</div>
-                  <div className='text'>Problem Solving</div>
-                </div>
-                <div className='radial-bar'>
-                  <svg x="0" y="0" viewBox='0 0 200 200'>
-                    <circle className='progress-bar' cx="100" cy="100" r="80"></circle>
-                    <circle className='path path-4' cx="100" cy="100" r="80"></circle>
-                  </svg>
-                  <div className='percentage'>80%</div>
-                  <div className='text'>TeamWork</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
       </content>
     </main>
   )
