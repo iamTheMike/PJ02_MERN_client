@@ -13,3 +13,5 @@ client
     -@quasar/extras : Decorate css
     -Boxicon : decorate css
     -react-datepicker : create calender
+    -datepicker : Create calender
+    
